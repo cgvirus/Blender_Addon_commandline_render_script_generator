@@ -17,6 +17,12 @@
 # ##### END GPL LICENSE BLOCK #####
 
 
+import bpy
+from bpy.types import Menu, Panel
+import os
+import sys
+
+
 bl_info = {
     "name": "commandline render script generator",
     "description": "Generates script for commandline render",
@@ -26,12 +32,6 @@ bl_info = {
     "category": "Render",
     "warning":     ""
     }
-
-import bpy
-from bpy.types import Menu, Panel
-import os
-import sys
-
 
 
 def create_script(context):

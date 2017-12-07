@@ -48,7 +48,7 @@ def create_script(context):
 
     #Creates Linux strings
     def linux_string():
-        lnx_out = "cd '{0}'\n./blender -b '{1}' -o '{2}#' -s {3} -e {4} -a"\
+        lnx_out = "cd '{0}'\n./blender -b '{1}' -o '{2}#####' -s {3} -e {4} -a"\
         .format(appdir,projectfile,renderdir,startframe,endframe)
         return (lnx_out)
 
@@ -61,7 +61,7 @@ def create_script(context):
 
     #Creates Windows strings
     def win_string():
-        win_out = 'cd ""{0}"\nblender -b "{1}" -o "{2}#" -s {3} -e {4} -a"'\
+        win_out = 'cd ""{0}"\nblender -b "{1}" -o "{2}#####" -s {3} -e {4} -a"'\
         .format(appdir,projectfile,renderdir,startframe,endframe)
         return (win_out)
 
@@ -73,7 +73,7 @@ def create_script(context):
 
     #Creates Mac strings
     def mac_string():
-        mac_out = "cd '{0}'\n./blender.app/Contents/MacOS/blender -b '{1}' -o '{2}#' -s {3} -e {4} -a"\
+        mac_out = "cd '{0}'\n./blender.app/Contents/MacOS/blender -b '{1}' -o '{2}#####' -s {3} -e {4} -a"\
         .format(appdir,projectfile,renderdir,startframe,endframe)
         return (mac_out)
 

@@ -67,7 +67,7 @@ def create_script(context):
 
     # Creates Windows strings
     def win_string():
-        win_out = 'cd ""{0}"\nblender -b "{1}" -o "{2}#####" -s {3} -e {4} -a"'\
+        win_out = 'cd "{0}"\nblender -b "{1}" -o "{2}#####" -s {3} -e {4} -a'\
             .format(appdir, projectfile, renderdir, startframe, endframe)
         return (win_out)
 
